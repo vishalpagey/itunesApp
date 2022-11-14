@@ -1,0 +1,68 @@
+@import "../App/App";
+
+.topAlbums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    @include bgGradient;
+    color: white;
+    .filters{
+        margin: 2rem;
+        display: flex;
+        justify-content: space-around;
+        width:70%;
+        .categories{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            div{
+                min-width: 150px;
+            }
+        }
+        .favourites{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .topAlbums__searchBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        margin-top: 70px;
+        border: $border;
+        border-radius: 3px;
+        background: $searchBoxBgColor;
+        font-family: $fontFamily;
+        border: none;
+        border: solid 1px #ccc;
+        border-radius: 10px;
+
+        .searchBox__input {
+            font-size: 20px;
+            height: 38px;
+            background: #ffffff;
+            border: none;
+            border-radius: 2px;
+            padding-left: 10px;
+            border: none;
+            border: solid 1px #ccc;
+            border-radius: 10px;
+        }
+
+        .searchBox__icon {
+            border-radius: 2px;
+            height: 20px;
+            color: $searchIconColor;
+            width: 30px;
+        }
+    }
+
+    .topAlbums__list {
+        padding: 0;
+        min-width: 70%;
+    }
+}
